@@ -16,12 +16,7 @@
 .bg-orange {
   background-color: #fa5b3d;
 }
-.centered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 .top-left {
   position: absolute;
   top: 8px;

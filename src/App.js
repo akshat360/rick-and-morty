@@ -14,10 +14,6 @@ function App() {
         alt="wallpaper"
       />
       <a href="/">
-        <h1 className="centered-text text-white font-b font-weight-bold">
-          RICK AND MORTY
-        </h1>
-
         <img
           src={logo}
           alt="logo"
