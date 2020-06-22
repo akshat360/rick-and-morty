@@ -1,0 +1,34 @@
+.mainColor {
+  background-color: #20232a;
+}
+.card-bg {
+  background-color: #111;
+}
+.font-b {
+  font-family: 'Balsamiq Sans', cursive;
+}
+.font-r {
+  font-family: 'Roboto', sans-serif;
+}
+.orange {
+  color: #fa5b3d;
+}
+.bg-orange {
+  background-color: #fa5b3d;
+}
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+a:hover {
+  color: #fa5b3d;
+  background-color: #fa5b3d;
+}
