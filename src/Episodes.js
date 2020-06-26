@@ -109,7 +109,7 @@ export default function Episodes() {
   return (
     <div className="container">
       <div className="mt-5">{searchForm()}</div>
-      {error !== null && (
+      {error !== null && searchText.length !== 0 && (
         <div className="alert alert-danger text-center my-1">
           Search not Found{' '}
         </div>
