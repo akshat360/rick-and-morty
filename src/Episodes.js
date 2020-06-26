@@ -56,8 +56,15 @@ export default function Episodes() {
   );
 
   const handlePageChange = (pageNumber) => {
-    setpageNo(pageNumber);
-    setPage(`https://rickandmortyapi.com/api/episode?page=${pageNumber}`);
+    if (searchText.length === 0) {
+      setpageNo(pageNumber);
+      setPage(`https://rickandmortyapi.com/api/episode?page=${pageNumber}`);
+    } else {
+      setpageNo(pageNumber);
+      setPage(
+        `https://rickandmortyapi.com/api/episode?name=${searchText}&page=${pageNumber}`
+      );
+    }
   };
 
   const pageNav = () => {
@@ -79,14 +86,11 @@ export default function Episodes() {
 
   const handleInputChange = (e) => {
     setSearchText(e.target.value);
-    if (e.key === 'Enter') {
-      let url = `https://rickandmortyapi.com/api/episode?name=${searchText}`;
-      url = url.trim().replace(/\s/g, '%20');
 
-      setPage(url);
+    let url = `https://rickandmortyapi.com/api/episode?name=${searchText}`;
+    url = url.trim().replace(/\s/g, '%20');
 
-      setSearchText('');
-    }
+    setPage(url);
   };
 
   const searchForm = () => {
