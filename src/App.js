@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.css';
 
+//importing libraries
+
 import Episodes from './Episodes';
 import wallpaper from './assests/moon.png';
 import logo from './assests/favicon.jpg';
